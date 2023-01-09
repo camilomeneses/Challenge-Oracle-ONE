@@ -5,22 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challenge One</title>
-    <!-- <link rel="stylesheet" href="styles.css" /> -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <h1>Encriptador</h1>
-    <code>Escriba Acontinuación</code><br />
-    <textarea id="encrypt" cols="30" rows="10"></textarea>
-    <h1>Desencriptador</h1>
-    <code>Escriba Acontinuación</code><br />
-    <textarea id="decrypt" cols="30" rows="10"></textarea>
-    <code id="decryptResult"></code>
-    <button id="btnDecrypt">Mirar</button>
-    <script src="main.js"></script>
+  <body class="bg-dark text-white">
+    <div class="container pt-3">
+      <div class="col-xs-10 col-sm-10 col-md-8 px-1 mx-auto">
+        <div class="row mt-2">
+          <h2>Instrucciones</h2>
+          <code class="text-white"
+            >Ingrese el texto que desee encriptar en el siguiente área de texto,
+            automáticamente se generará la respuesta encriptada en la segunda
+            área de texto, puede usar las opciones de
+            <img src="images/clipboard-plus.svg" alt="add icon" /> para copiar
+            el texto ó <img src="images/eye.svg" alt="eye icon" />
+            para vizualizar el texto encriptado.
+          </code>
+        </div>
+
+        <div class="row mt-2">
+          <h3>Encriptador</h3>
+          <div class="form-floating">
+            <textarea
+              style="height: calc(100vh / 5)"
+              id="encrypt"
+              class="form-control bg-dark text-white"
+              placeholder="Ingresa tu texto aquí"></textarea>
+            <label class="text-info ps-3" for="encrypt"
+              >Para <em>encriptar</em> un texto, ingréselo aquí</label
+            >
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <h3>Desencriptador</h3>
+          <div class="form-floating floating-button-container">
+            <textarea
+              style="height: calc(100vh / 5); padding-right: 40px"
+              id="decrypt"
+              class="form-control bg-dark text-white"
+              placeholder="Ingresa tu texto aquí"></textarea>
+            <label class="text-info ps-3" for="decrypt"
+              >Para <em>desencriptar</em> un texto, ingréselo aquí</label
+            >
+
+            <button
+              id="btnCopy"
+              class="floating-right-button button-copy"
+              title="Copiar al Portapales">
+              <img src="images/clipboard-plus.svg" alt="add icon" />
+            </button>
+
+            <button
+              id="btnDecrypt"
+              class="floating-right-button button-eye"
+              title="Desencriptar Contenido">
+              <img src="images/eye.svg" alt="eye icon" />
+            </button>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <a
+            class="text-white linkedin"
+            href="https://www.linkedin.com/in/camilo-meneses/"
+            target="_blank">
+            <img src="images/linkedin.svg" alt="linkedin icon" class="me-2" />
+            Germán Camilo Meneses Villota
+          </a>
+        </div>
+      </div>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+      <script src="main.js"></script>
+    </div>
   </body>
 </html>

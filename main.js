@@ -8,6 +8,7 @@ let encrypt = document.getElementById('encrypt');
 let decrypt = document.getElementById('decrypt');
 let decryptResult = document.getElementById('decryptResult');
 let btnDecrypt = document.getElementById('btnDecrypt');
+let btnCopy = document.getElementById('btnCopy');
 
 // todo: Functions
 // ! Encrypt Function
@@ -58,4 +59,10 @@ btnDecrypt.addEventListener('mouseup', () => {
     return;
   }
   decrypt.value = encryptFn(encrypt.value);
+});
+
+// * btnCopy Events
+btnCopy.addEventListener('click', () => {
+  document.getElementById('decrypt').select();
+  document.execCommand('copy');
 });

@@ -1,4 +1,38 @@
-html, textarea {
-    background-color: rgb(34, 34, 34);
-    color: white;
+html,
+body {
+  min-width: 375px;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  border-color: transparent;
+}
+
+.floating-right-button {
+  position: absolute;
+  right: 15px;
+  z-index: 999;
+}
+
+.button-copy {
+  top: 20px;
+}
+
+.button-eye {
+  bottom: 20px;
+}
+
+code > img {
+  width: 20px;
+  height: 20px;
+}
+
+.linkedin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
 }
