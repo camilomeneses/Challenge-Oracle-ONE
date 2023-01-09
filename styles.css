@@ -28,6 +28,11 @@ code > img {
   height: 20px;
 }
 
+.form-floating > button > img{
+  width: 32px;
+  height: 32px;
+}
+
 .linkedin {
   display: flex;
   align-items: center;
