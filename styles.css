@@ -17,10 +17,20 @@ button {
 
 .button-copy {
   top: 20px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background-repeat: no-repeat;
+  background-image:url(images/clipboard-plus.svg)
 }
 
 .button-eye {
   bottom: 20px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background-repeat: no-repeat;
+  background-image:url(images/eye.svg)
 }
 
 code > img {
