@@ -20,5 +20,8 @@ En el segundo textarea disponemos de dos opciones que nos servirán para lo sigu
 
 Esto es todo lo que la aplicación **Encrytador** pone a disposición del público en general.
 
-Author : Germán Camilo Meneses Villota
-Linkedin: <https://www.linkedin.com/in/camilo-meneses/>
+***
+
+- Author : Camilo Meneses
+- Linkedin: <https://www.linkedin.com/in/camilo-meneses/>
+- Link App: <https://camilomeneses.github.io/Challenge-Oracle-ONE/>
