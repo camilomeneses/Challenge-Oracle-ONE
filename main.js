@@ -49,6 +49,18 @@ decrypt.addEventListener('input', () => {
 });
 
 // * btnDecrypt Events
+btnDecrypt.addEventListener('touchstart', () => {
+  decrypt.value = decryptFn(decrypt.value);
+});
+
+btnDecrypt.addEventListener('touchend', () => {
+  if (encrypt.value === '') {
+    decrypt.value = encryptFn(decrypt.value);
+    return;
+  }
+  decrypt.value = encryptFn(encrypt.value);
+});
+
 btnDecrypt.addEventListener('mousedown', () => {
   decrypt.value = decryptFn(decrypt.value);
 });
